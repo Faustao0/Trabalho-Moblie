@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Notas acadêmicas ADS"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:layout_marginTop="40dp"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="15dp"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/et_idade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Idade"
+                android:layout_marginTop="15dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/et_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Disciplina"
+                android:layout_marginTop="15dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/et_nota1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 1º Bimestre"
+                android:layout_marginTop="15dp"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/et_nota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 2º Bimestre"
+                android:layout_marginTop="15dp"
+                android:inputType="numberDecimal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp">
+
+                <Button
+                    android:id="@+id/btn_enviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="40dp"
+                    android:backgroundTint="#4741ED"
+                    android:text="Enviar" />
+
+                <Button
+                    android:id="@+id/btn_limpar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#E63636"
+                    android:text="Limpar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_erro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_resumo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
